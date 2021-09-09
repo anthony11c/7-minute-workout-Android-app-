@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VjezbajSaMnom</string>
+    <string name="image">Exercise image</string>
+    <string name="str_start">START</string>
+    <string name="get_ready">PRIPREMI SE</string>
+    <string name="next_exercise">SLJEDEĆA VJEŽBA: </string>
+    <string name="exercise_name">PLENK</string>
+    <string name="back_in_exercise">Jeste li sigurni?</string>
+    <string name="back_in_exercise_2">Ovo će zaustaviti vaš trening. Doista želite prekinuti sa vježbanjem?</string>
+    <string name="yes">DA</string>
+    <string name="no">NE</string>
+    <string name="calculate_bmi">IZRAČUNAJ BMI</string>
+</resources>
