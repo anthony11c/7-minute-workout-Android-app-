@@ -91,7 +91,7 @@
             tools:text="Exercise Name" />
 
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/llExerciseView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -103,9 +103,10 @@
 
         <ImageView
             android:id="@+id/ivImage"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:layout_weight="0"
+
             android:contentDescription="@string/image"
             android:scaleType="fitXY"
             android:src="@drawable/ic_jumping_jacks"
@@ -121,16 +122,17 @@
             android:textStyle="bold" />
 
         <FrameLayout
+
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@id/ivImage"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/item_circular_color_accent_border">
 
             <ProgressBar
                 android:id="@+id/progressBarExercise"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:background="@drawable/circular_progress_gray"
@@ -157,7 +159,7 @@
                     tools:text="30" />
             </LinearLayout>
         </FrameLayout>
-    </LinearLayout>
+    </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvExerciseStatus"
         android:layout_width="wrap_content"
