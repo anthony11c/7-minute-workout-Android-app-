@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="EXERCISE COMPLETED"
+            android:text="@string/finished_exercises"
             android:textSize="18sp"
             android:visibility="gone"
             tools:visibility="visible" />

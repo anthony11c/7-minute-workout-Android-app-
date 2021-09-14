@@ -22,10 +22,10 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var binding: ActivityExcerciseBinding
     private var restTimer : CountDownTimer? = null
     private var restProgress = 0
-    private var restTImerDuration: Long = 1
+    private var restTImerDuration: Long = 10
     private var exerciseTimer : CountDownTimer? = null
     private var exerciseProgress = 0
-    private var exerciseTimerDuration: Long = 1
+    private var exerciseTimerDuration: Long = 30
 
     private var exerciseList: ArrayList<ExerciseModel>? = null
     private var currentExercisePosition = -1

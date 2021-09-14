@@ -17,7 +17,7 @@ class HistoryActivity : AppCompatActivity() {
         val actionbar = supportActionBar //actionbar
         if (actionbar != null) {
             actionbar.setDisplayHomeAsUpEnabled(true) //set back button
-            actionbar.title = "HISTORY" // Setting a title in the action bar.
+            actionbar.title = "POVIJEST" // Setting a title in the action bar.
         }
 
         toolbar_history_activity.setNavigationOnClickListener {

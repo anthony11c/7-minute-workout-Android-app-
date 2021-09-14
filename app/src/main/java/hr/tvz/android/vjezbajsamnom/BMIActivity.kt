@@ -2,6 +2,7 @@ package hr.tvz.android.vjezbajsamnom
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_bmiactivity.*
@@ -64,38 +65,38 @@ class BMIActivity : AppCompatActivity() {
         val bmiDescription: String
 
         if (bmi.compareTo(15f) <= 0) {
-            bmiLabel = "Very severely underweight"
-            bmiDescription = "Oops! You really need to take better care of yourself! Eat more!"
+            bmiLabel = resources.getString(R.string.bmi_label_underweight)
+            bmiDescription = resources.getString(R.string.bmi_label_underweight_desc)
         } else if (bmi.compareTo(15f) > 0 && bmi.compareTo(16f) <= 0
         ) {
-            bmiLabel = "Severely underweight"
-            bmiDescription = "Oops!You really need to take better care of yourself! Eat more!"
+            bmiLabel = resources.getString(R.string.bmi_label_severly_underweight)
+            bmiDescription = resources.getString(R.string.bmi_label_severly_underweight_desc)
         } else if (bmi.compareTo(16f) > 0 && bmi.compareTo(18.5f) <= 0
         ) {
-            bmiLabel = "Underweight"
-            bmiDescription = "Oops! You really need to take better care of yourself! Eat more!"
+            bmiLabel = resources.getString(R.string.bmi_label_slim)
+            bmiDescription = resources.getString(R.string.bmi_label_slim_desc)
         } else if (bmi.compareTo(18.5f) > 0 && bmi.compareTo(25f) <= 0
         ) {
-            bmiLabel = "Normal"
-            bmiDescription = "Congratulations! You are in a good shape!"
+            bmiLabel = resources.getString(R.string.bmi_label_normal)
+            bmiDescription = resources.getString(R.string.bmi_label_normal_desc)
         } else if (java.lang.Float.compare(bmi, 25f) > 0 && java.lang.Float.compare(
                 bmi,
                 30f
             ) <= 0
         ) {
-            bmiLabel = "Overweight"
-            bmiDescription = "Oops! You really need to take care of your yourself! Workout maybe!"
+            bmiLabel = resources.getString(R.string.bmi_label_overweight)
+            bmiDescription = resources.getString(R.string.bmi_label_overweight_desc)
         } else if (bmi.compareTo(30f) > 0 && bmi.compareTo(35f) <= 0
         ) {
-            bmiLabel = "Obese Class | (Moderately obese)"
-            bmiDescription = "Oops! You really need to take care of your yourself! Workout maybe!"
+            bmiLabel = resources.getString(R.string.bmi_label_obese)
+            bmiDescription = resources.getString(R.string.bmi_label_obese_desc)
         } else if (bmi.compareTo(35f) > 0 && bmi.compareTo(40f) <= 0
         ) {
-            bmiLabel = "Obese Class || (Severely obese)"
-            bmiDescription = "OMG! You are in a very dangerous condition! Act now!"
+            bmiLabel = resources.getString(R.string.bmi_label_obese)
+            bmiDescription = resources.getString(R.string.bmi_label_obese_desc)
         } else {
-            bmiLabel = "Obese Class ||| (Very Severely obese)"
-            bmiDescription = "OMG! You are in a very dangerous condition! Act now!"
+            bmiLabel = resources.getString(R.string.bmi_label_obese)
+            bmiDescription = resources.getString(R.string.bmi_label_obese_desc)
         }
 
         tvYourBMI.visibility = View.VISIBLE

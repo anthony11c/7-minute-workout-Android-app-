@@ -10,4 +10,26 @@
     <string name="yes">DA</string>
     <string name="no">NE</string>
     <string name="calculate_bmi">IZRAČUNAJ BMI</string>
+    <string name="calculator">KALKULATOR</string>
+    <string name="history">POVIJEST</string>
+    <string name="end_finish">KRAJ</string>
+    <string name="finish">ZAVRŠI</string>
+    <string name="finished_exercises">ODRAĐENE VJEŽBE</string>
+
+    <string name="weight_bmi">TEŽINA (kg)</string>
+    <string name="HEIGHT_bmi">VISINA (cm)</string>
+    <string name="your_bmi">TVOJ BMI</string>
+
+    <string name="bmi_label_normal">Normalan</string>
+    <string name="bmi_label_normal_desc">Čestitamo! U dobroj si formi!</string>
+    <string name="bmi_label_underweight">Kost i koža</string>
+    <string name="bmi_label_underweight_desc">Trebali bi početi jesti puno više nego inače!</string>
+    <string name="bmi_label_severly_underweight">Tanak poput prsta</string>
+    <string name="bmi_label_severly_underweight_desc">Trebali biste malo više jesti i poraditi na mišićima!</string>
+    <string name="bmi_label_slim">Mršavi ste</string>
+    <string name="bmi_label_slim_desc">Trebali biste poraditi na mišićnoj masi!</string>
+    <string name="bmi_label_overweight">Mali višak kilograma</string>
+    <string name="bmi_label_overweight_desc">Samo vježbajte sa nama svaki dan i to je to!</string>
+    <string name="bmi_label_obese">Višak kilograma</string>
+    <string name="bmi_label_obese_desc">Moraš pripaziti što jedeš i vježbati svakodnevno s nama!</string>
 </resources>
