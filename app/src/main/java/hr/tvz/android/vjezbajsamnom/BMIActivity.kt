@@ -19,7 +19,7 @@ class BMIActivity : AppCompatActivity() {
         val actionbar = supportActionBar
         if(actionbar != null){
             actionbar.setDisplayHomeAsUpEnabled(true)
-            actionbar.title = "Calculate BMI"
+            actionbar.title = "Izračunaj BMI"
         }
         toolbar_bmi_activity.setNavigationOnClickListener {
             onBackPressed()
