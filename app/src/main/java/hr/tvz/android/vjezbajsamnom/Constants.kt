@@ -60,7 +60,7 @@ class Constants {
                 )
             exerciseList.add(highKneesRunningInPlace)
 
-            val lunges = ExerciseModel(10, "Lunges", R.drawable.ic_lunge, false, false)
+            val lunges = ExerciseModel(10, "Lunges", R.raw.lunges, false, false)
             exerciseList.add(lunges)
 
             val pushupAndRotation =
@@ -73,7 +73,7 @@ class Constants {
                 )
             exerciseList.add(pushupAndRotation)
 
-            val sidePlank = ExerciseModel(12, "Side Plank", R.drawable.ic_side_plank, false, false)
+            val sidePlank = ExerciseModel(12, "Side Plank", R.raw.sideplank, false, false)
             exerciseList.add(sidePlank)
 
             return exerciseList
