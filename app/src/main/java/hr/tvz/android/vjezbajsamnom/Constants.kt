@@ -12,49 +12,49 @@ class Constants {
             val exerciseList = ArrayList<ExerciseModel>()
 
             val jumpingJacks =
-                ExerciseModel(1, "Jumping Jacks", R.drawable.ic_jumping_jacks, false, false)
+                ExerciseModel(1, "Jumping Jacks", R.raw.jumpingjacks, false, false)
             exerciseList.add(jumpingJacks)
 
-            val wallSit = ExerciseModel(2, "Wall Sit", R.drawable.ic_wall_sit, false, false)
+            val wallSit = ExerciseModel(2, "Wall Sit", R.raw.wallsit, false, false)
             exerciseList.add(wallSit)
 
-            val pushUp = ExerciseModel(3, "Push Up", R.drawable.ic_push_up, false, false)
+            val pushUp = ExerciseModel(3, "Push Up", R.raw.pushups, false, false)
             exerciseList.add(pushUp)
 
             val abdominalCrunch =
-                ExerciseModel(4, "Abdominal Crunch", R.drawable.ic_abdominal_crunch, false, false)
+                ExerciseModel(4, "Abdominal Crunch", R.raw.abdominalcrunches, false, false)
             exerciseList.add(abdominalCrunch)
 
             val stepUpOnChair =
                 ExerciseModel(
                     5,
                     "Step-Up onto Chair",
-                    R.drawable.ic_step_up_onto_chair,
+                    R.raw.stepups,
                     false,
                     false
                 )
             exerciseList.add(stepUpOnChair)
 
-            val squat = ExerciseModel(6, "Squat", R.drawable.ic_squat, false, false)
+            val squat = ExerciseModel(6, "Squat", R.raw.squats, false, false)
             exerciseList.add(squat)
 
             val tricepDipOnChair =
                 ExerciseModel(
                     7,
                     "Tricep Dip On Chair",
-                    R.drawable.ic_triceps_dip_on_chair,
+                    R.raw.tricepdips,
                     false,
                     false
                 )
             exerciseList.add(tricepDipOnChair)
 
-            val plank = ExerciseModel(8, "Plank", R.drawable.ic_plank, false, false)
+            val plank = ExerciseModel(8, "Plank", R.raw.plank, false, false)
             exerciseList.add(plank)
 
             val highKneesRunningInPlace =
                 ExerciseModel(
                     9, "High Knees Running In Place",
-                    R.drawable.ic_high_knees_running_in_place,
+                    R.raw.highknees,
                     false,
                     false
                 )

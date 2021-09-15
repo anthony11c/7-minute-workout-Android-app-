@@ -3,12 +3,14 @@ package hr.tvz.android.vjezbajsamnom
 import android.app.Dialog
 import android.content.Intent
 import android.media.MediaPlayer
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
+import android.widget.MediaController
 import androidx.recyclerview.widget.LinearLayoutManager
 import hr.tvz.android.vjezbajsamnom.databinding.ActivityExcerciseBinding
 import kotlinx.android.synthetic.main.activity_excercise.*
@@ -85,6 +87,8 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun setupExerciseView() {
 
+        val mediaController = MediaController(this)
+
         llRestView.visibility = View.GONE
         llExerciseView.visibility = View.VISIBLE
 
@@ -98,8 +102,17 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         // This function is used to set the progress details.
         setExerciseProgressBar()
 
-        ivImage.setImageResource(exerciseList!![currentExercisePosition].getImage())
+        mediaController.setAnchorView(vwExcerciseVideo)
+        vwExcerciseVideo.setVideoURI(Uri.parse("android.resource://$packageName/${exerciseList!![currentExercisePosition].getImage()}"))
+        vwExcerciseVideo.setMediaController(null)
+        vwExcerciseVideo.requestFocus()
+        vwExcerciseVideo.start()
+
         tvExerciseName.text = exerciseList!![currentExercisePosition].getName()
+
+        vwExcerciseVideo.setOnPreparedListener {
+            it.isLooping = true
+        }
     }
     // END
 

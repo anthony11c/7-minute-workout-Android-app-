@@ -96,26 +96,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_excercise_activity"
-        android:gravity="center"
         android:orientation="vertical"
         android:visibility="gone"
         tools:visibility="visible">
 
-        <ImageView
-            android:id="@+id/ivImage"
-            android:layout_width="500dp"
-            android:layout_height="250dp"
-            android:layout_weight="0"
+<!--        <ImageView-->
+<!--            android:id="@+id/ivImage"-->
+<!--            android:layout_width="500dp"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:layout_weight="0"-->
 
-            android:contentDescription="@string/image"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_jumping_jacks"
-            />
+<!--            android:contentDescription="@string/image"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/ic_jumping_jacks"-->
+<!--            />-->
+        <VideoView
+            android:id="@+id/vwExcerciseVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
 
         <TextView
             android:id="@+id/tvExerciseName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
             android:text="@string/exercise_name"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
@@ -125,8 +134,9 @@
 
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_toEndOf="@id/ivImage"
-            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
             android:background="@drawable/item_circular_color_accent_border">
 
             <ProgressBar
