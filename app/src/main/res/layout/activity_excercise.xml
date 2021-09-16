@@ -104,7 +104,7 @@
 
         <VideoView
             android:id="@+id/vwExcerciseVideo"
-            android:layout_width="700dp"
+            android:layout_width="550dp"
             android:layout_height="700dp"/>
 
         <TextView

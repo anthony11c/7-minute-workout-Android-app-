@@ -67,7 +67,7 @@ class Constants {
                 ExerciseModel(
                     11,
                     "Push up and Rotation",
-                    R.drawable.ic_push_up_and_rotation,
+                    R.raw.pushuprotation,
                     false,
                     false
                 )
