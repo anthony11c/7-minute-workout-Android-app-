@@ -111,6 +111,7 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tvExerciseName.text = exerciseList!![currentExercisePosition].getName()
 
         vwExcerciseVideo.setOnPreparedListener {
+            it.setVolume(0f, 0f)
             it.isLooping = true
         }
     }
@@ -187,9 +188,6 @@ class ExcerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }.start()
     }
 
-    /**
-     * Here in the Destroy function we will reset the rest timer if it is running.
-     */
     public override fun onDestroy() {
         if (restTimer != null) {
             restTimer!!.cancel()
